@@ -55,7 +55,8 @@ ol {
 
 .section-group,
 .section-teams,
-.section-portflio {
+.section-portflio,
+.section-clients {
 	padding-bottom: 94px;
 	padding-top: 94px;
 }
@@ -164,13 +165,59 @@ ol {
 .contact-list .header-mail + .header-tel {
 	margin-left: 50px;
 }
+
+.header-mail,
+.header-tel {
+	/* display: flex; */
+	align-items: center;
+}
+
+.icon-smartphone,
+.icon-envelope {
+	margin-right: 10px;
+	fill: #757575;
+}
+/* display: block; */
+
+/* cursor: pointer; */
+/* width: 16px;
+	height: 16px; */
+
+/* .header-contact:hover,
+.icon-smartphone:focus,
+.header-tel :hover,
+.header-tel :focus {
+	fill: #2196f3;
+} */
+
+/* .icon-envelope {
+	margin-right: 10px;
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+} */
+
 /* Main */
 .main-block {
 }
 /* Title H1 */
 .section-title {
 	padding: 200px 0px 200px 0px;
-	background: #2f303a;
+	text-align: center;
+	background-color: #2f303a;
+	background-image: linear-gradient(
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
+		),
+		url(../images/img-office.jpg);
+	text-align: center;
+	padding: 200px 0px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	max-width: 1600px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .page-title {
@@ -207,7 +254,7 @@ ol {
 
 .title-button:hover,
 .title-button:focus {
-	background: #000;
+	background: #757575;
 }
 /* Features group */
 .section-group {
@@ -245,9 +292,9 @@ ol {
 	margin-right: 30px;
 }
 
-.features-title {
+/* .features-title {
 	display: none;
-}
+} */
 
 .group-list {
 	display: flex;
@@ -255,6 +302,23 @@ ol {
 
 .group-link {
 	width: 270px;
+}
+
+.group-block {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f5f4fa;
+	width: 270px;
+	height: 120px;
+	margin-bottom: 30px;
+	border-radius: 4px;
+}
+/* display: block;
+	position: center; */
+
+.group-icon {
+	fill: #212121;
 }
 
 /* Box */
@@ -284,7 +348,8 @@ ol {
 	/* justify-content: space-between; */
 	/* text-decoration: none; */
 }
-.box-image {
+.box-image,
+.client-icon {
 	display: block;
 }
 
@@ -320,6 +385,7 @@ ol {
 	letter-spacing: 0.03em;
 	text-align: center;
 	color: #757575;
+	margin-bottom: 16px;
 }
 
 .team-list {
@@ -338,7 +404,44 @@ ol {
 }
 
 .team-card {
-	padding: 30px 0;
+	padding: 30px 32px;
+	background: #ffffff;
+}
+
+/* social ions */
+
+.social-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	width: 44px;
+	height: 44px;
+}
+
+.social-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-roll {
+	gap: 10px;
+	display: flex;
+	border-radius: 50%;
+	background: #fff;
+	/* justify-content: ; */
+}
+.social-icon {
+	fill: #afb1b8;
+}
+
+.social-roll:hover {
+	background: #2196f3;
+}
+
+.social-roll:hover .social-icon {
+	fill: #fff;
 }
 
 /* Regular clients */
@@ -351,6 +454,69 @@ ol {
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: #212121;
+	padding-bottom: 50px;
+}
+
+/* .group-block {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f5f4fa;
+	width: 270px;
+	height: 120px;
+	margin-bottom: 30px;
+	border-radius: 4px;}
+
+	display: block;
+	position: center; */
+
+.client-list {
+	display: flex;
+	/* flex-wrap: wrap; */
+	justify-content: center;
+	gap: 30px;
+	/* flex-basis: calc((100% - 150px) / 5); */
+}
+
+/* .clients-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: -30px;
+} */
+
+.client-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 170px;
+	height: 92px;
+	box-sizing: border-box;
+}
+
+.client-icon {
+	/* fill: currentColor; */
+	fill: #afb1b8;
+}
+
+.client-roll {
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+}
+/* .client-link:hover,
+.client-link:focus,
+.client-icon:hover,
+.client-icon:focus {
+	fill: #2196f3;
+	border-color: #2196f3;
+} */
+
+.client-roll:hover {
+	border: 1px solid #2196f3;
+}
+
+.client-roll:hover .client-icon {
+	fill: #2196f3;
 }
 
 /* Footer */
@@ -401,8 +567,63 @@ ol {
 	margin-bottom: 20px;
 }
 
-/* portfolio */
+/* footer social icon */
+.footer-title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	align-items: center;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
 
+.footer-content {
+	align-items: baseline;
+	display: flex;
+}
+.footer-social {
+	box-sizing: border-box;
+	display: block;
+	min-width: 206px;
+	margin-left: 70px;
+}
+
+.footer-list {
+	display: flex;
+}
+
+/* .footer-flex {
+	/* display: flex; */
+
+.footer-icon {
+	fill: #fff;
+}
+
+.footer-icon-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+}
+
+/* .footer-icon-roll {
+	gap: 10px;
+} */
+.footer-icon-roll:not(:last-child) {
+	margin-right: 10px;
+}
+
+.footer-icon-link:hover {
+	background: #2196f3;
+}
+
+/* portfolio */
 .section-portflio {
 	background: #ffffff;
 }
@@ -436,6 +657,12 @@ ol {
 }
 
 /* buttons-filters-portfolio */
+
+.project-link:hover {
+	cursor: pointer;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+		1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .page-title-poster {
 	font-weight: 900;

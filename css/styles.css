@@ -142,8 +142,11 @@ ol {
 }
 
 .link-studio:hover,
+.link-studio:focus,
 .link-portfolio:hover,
+.link-portfolio:focus,
 .link-contact:hover,
+.link-contact:focus,
 .header-contact:hover,
 .header-contact:focus,
 .footer-contact:hover,
@@ -160,6 +163,7 @@ ol {
 	letter-spacing: 0.02em;
 	color: #757575;
 	text-decoration: none;
+	align-items: center;
 }
 
 .contact-list .header-mail + .header-tel {
@@ -170,13 +174,19 @@ ol {
 .header-tel {
 	/* display: flex; */
 	align-items: center;
+	/* position: relative; */
 }
 
-.icon-smartphone,
-.icon-envelope {
+.icon-envelope-smartphone {
 	margin-right: 10px;
 	fill: #757575;
 }
+
+.header-contact:hover .icon-envelope-smartphone,
+.header-contact:focus .icon-envelope-smartphone {
+	fill: #2196f3;
+}
+
 /* display: block; */
 
 /* cursor: pointer; */
@@ -204,7 +214,7 @@ ol {
 .section-title {
 	padding: 200px 0px 200px 0px;
 	text-align: center;
-	background-color: #2f303a;
+	/* background-color: #2f303a; */
 	background-image: linear-gradient(
 			rgba(47, 48, 58, 0.4),
 			rgba(47, 48, 58, 0.4)
@@ -254,7 +264,7 @@ ol {
 
 .title-button:hover,
 .title-button:focus {
-	background: #757575;
+	background: #0400ff;
 }
 /* Features group */
 .section-group {
@@ -417,30 +427,33 @@ ol {
 	color: #fff;
 	width: 44px;
 	height: 44px;
+	background: #fff;
+	border-radius: 50%;
 }
 
 .social-list {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	gap: 10px;
 }
 
 .social-roll {
-	gap: 10px;
 	display: flex;
-	border-radius: 50%;
-	background: #fff;
+
 	/* justify-content: ; */
 }
 .social-icon {
 	fill: #afb1b8;
 }
 
-.social-roll:hover {
+.social-link:hover,
+.social-link:focus {
 	background: #2196f3;
 }
 
-.social-roll:hover .social-icon {
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
 	fill: #fff;
 }
 
@@ -492,6 +505,8 @@ ol {
 	width: 170px;
 	height: 92px;
 	box-sizing: border-box;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
 }
 
 .client-icon {
@@ -500,8 +515,6 @@ ol {
 }
 
 .client-roll {
-	border: 1px solid #afb1b8;
-	border-radius: 4px;
 }
 /* .client-link:hover,
 .client-link:focus,
@@ -511,11 +524,13 @@ ol {
 	border-color: #2196f3;
 } */
 
-.client-roll:hover {
+.client-link:hover,
+.client-link:focus {
 	border: 1px solid #2196f3;
 }
 
-.client-roll:hover .client-icon {
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
 	fill: #2196f3;
 }
 
@@ -619,7 +634,8 @@ ol {
 	margin-right: 10px;
 }
 
-.footer-icon-link:hover {
+.footer-icon-link:hover,
+.footer-icon-link:focus {
 	background: #2196f3;
 }
 
